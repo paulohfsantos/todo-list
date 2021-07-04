@@ -1,0 +1,13 @@
+<div
+  [ngClass]="{ reminderTrue: task?.reminder, reminderFalse: !task?.reminder }"
+  class="task"
+  (dblclick)="onToggle(task)"
+  >
+  <div class="item">
+    <h3>{{ task?.text }}</h3>
+    <p>{{ task?.day }}</p>
+  </div>
+  <div class="close">
+    <fa-icon (click)="closeTask(task)" [ngStyle]="{'color': 'red', 'cursor': 'pointer'}" [icon]="faTimes"></fa-icon>
+  </div>
+</div>

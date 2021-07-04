@@ -1,0 +1,18 @@
+@import '../../../styles.scss';
+
+.task {
+  background-color: $list-bg;
+  margin-bottom: 10px;
+  padding: 5px 25px;
+  font-size: $small;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task.reminderTrue {
+  border-left: 3px solid $success-border;
+}
+.task.reminderFalse {
+  border-left: 3px solid $error-border;
+}

@@ -1,0 +1,45 @@
+@import '../../../styles.scss';
+
+form {
+  label {
+    display: block;
+  }
+
+  input {
+    padding: 8px 10px;
+    margin: 5px 0 15px 0;
+    width: 100%;
+    border: 1px solid $borderLight;
+    outline: none;
+
+    &:focus {
+      border-bottom: 3px solid $borderBold;
+    }
+  }
+
+  .check {
+    display: flex;
+    align-items: center;
+    margin: 5px 0 10px 0;
+
+    label {
+      display: inline;
+    }
+    input {
+      width: unset;
+      margin: 0 5px 0 0;
+    }
+  }
+
+  input[type=submit] {
+    @include btn;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    transition: 0.2s ease-in;
+
+    &:hover {
+      background-color: #1d1d1d;
+    }
+  }
+}

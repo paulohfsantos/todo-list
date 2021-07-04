@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+// border
+$borderBold: rgb(51, 51, 51);
+$borderLight: rgb(145, 145, 145);
+$success-border: rgb(116, 155, 65);
+$error-border: rgb(177, 53, 53);
+
+//bgs
+$error-bg: rgb(177, 53, 53);
+$info-bg: rgb(62, 118, 202);
+$list-bg: rgb(204, 204, 204);
+$secondary-bg: rgb(131, 131, 131);
+$success-bg: rgb(116, 155, 65);
+
+
+// font colors
+$grafitte: rgb(51, 51, 51);
+$info: rgb(62, 118, 202);
+$secondary: rgb(131, 131, 131);
+$error-text: rgb(177, 53, 53);
+$sucess-text: rgb(116, 155, 65);
+
+// font size
+$xsmall: 10px;
+$small: 14px;
+$medium: 16px;
+$big: 20px;
+$xbig: 25px;
+
+hr {
+  border: 1px solid $borderLight;
+}
+
+//btn
+@mixin btn {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid $grafitte;
+  color: $grafitte;
+  cursor: pointer;
+}
