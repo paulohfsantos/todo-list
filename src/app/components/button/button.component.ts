@@ -9,6 +9,7 @@ export class ButtonComponent implements OnInit {
 
   //passing props to button component
   @Input() text: string|undefined;
+  @Input() color: string|undefined
   @Output() btnClick = new EventEmitter()
 
   constructor() {}

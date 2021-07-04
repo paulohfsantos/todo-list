@@ -1,5 +1,9 @@
 <div class="container">
   <app-header></app-header>
   <hr />
-  <app-tasks></app-tasks>
+  <router-outlet></router-outlet>
+
+  <footer *ngIf="!hasRoute('/about')">
+    <a routerLink="/about">About us</a>
+  </footer>
 </div>

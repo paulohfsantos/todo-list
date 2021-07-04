@@ -1,5 +1,6 @@
 @import '../../../styles.scss';
 
 .btn {
-  @include btn
+  @include btn;
+  color: #fff;
 }
