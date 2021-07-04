@@ -12,4 +12,4 @@ Run `ng serve -o` for a dev server. Navigate to `http://localhost:4200/`.
 
 ## JSON Server
 
-To execute the fake backend execute the command `npm run server`.
+To execute the fake backend run `npm run server`.
